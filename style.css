@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  background-image: url(https://wallpapercave.com/wp/wp6823672.jpg);
+  background-size: cover;
+  object-fit: cover;
+  color: #fff;
+  margin-left: 100px;
+  transition: all 0.5s;
+}
+
+.subtitle {
+  width: 30rem;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.subtitle span {
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.movies {
+  width: 100%;
+  height: 300px;
+  padding-left: 5px;
+  padding-bottom: 100px;
+  overflow-y: scroll;
+}
+.movies h2 {
+  margin: 0;
+}
+
+.movies::-webkit-scrollbar {
+  display: none;
+}
+
+.movies .comedy {
+  display: flex;
+}
+
+.movies div {
+  height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.movies div img {
+  width: 120px;
+  height: 200px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.movies div img:focus {
+  outline: none;
+  border: 1px solid orange;
+}
+
+.menu {
+  width: 100px;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  transition: 0.5s;
+}
+.menu:hover {
+  width: 240px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 40px);
+  align-items: flex-start;
+  padding-left: 33px;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menu-icon i {
+  font-size: 2.125rem;
+  margin-right: 10px;
+}
+
+.menu p {
+  font-size: 1.5rem;
+}
+
+.menu-icon:hover {
+  color: rgb(255, 196, 0);
+}
+
+/* //////////////////////////////////////////////////// */
+
+.video-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+}
+
+.c-video {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-video:hover .controls {
+  transform: translateY(0);
+}
+
+.controls {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(100%);
+  transition: all 0.2s;
+}
+
+.c-top {
+  width: 100%;
+  height: 25px;
+  display: flex;
+}
+.c-bottom {
+  width: 100%;
+  height: 25px;
+  display: flex;
+}
+
+.buttons button {
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 2px 10px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.buttons button:before {
+  content: "";
+}
+
+#play-pause {
+  left: 50%;
+  top: 5px;
+}
+
+#bitrate {
+  right: 10px;
+  top: 5px;
+}
+
+#back {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+
+.buttons button.play {
+  content: "play";
+}
+.buttons button.pause {
+  content: "pause";
+}
+
+.video-bar {
+  position: relative;
+  height: 2px;
+  top: 10px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+.bar {
+  height: 2px;
+  background-color: rgb(107, 0, 0);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f8e9ef1c99.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu-icon menu-tv">
+        <i class="fa-solid fa-tv"></i>
+        <p id="live-tv" style="display: none">Live TV</p>
+      </div>
+
+      <div class="menu-icon menu-movie">
+        <i class="fa-solid fa-clapperboard"></i>
+        <p id="movies" style="display: none">Movies</p>
+      </div>
+
+      <div class="menu-icon menu-player">
+        <i class="fa fa-play-circle-o"></i>
+        <p id="tv-shows" style="display: none">TV shows</p>
+      </div>
+
+      <div class="menu-icon menu-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p id="search" style="display: none">Search</p>
+      </div>
+
+      <div class="menu-icon menu-settings">
+        <i class="fa-solid fa-gear"></i>
+        <p id="settings" style="display: none">Settings</p>
+      </div>
+
+      <div class="menu-icon menu-exit">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <p id="log-out" style="display: none">Log out</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="subtitle">
+        <h1 id="name">name</h1>
+        <h3 id="raiting">
+          <span></span>
+        </h3>
+        <p id="director">director</p>
+        <p id="cast">
+          cast: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Pariatur cum, quo quibusdam officiis voluptatum,
+        </p>
+        <h3 id="subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nostrum
+          reiciendis itaque, aperiam, explicabo cupiditate reprehenderit
+          suscipit blanditiis similique dolorem consequatur in illum
+          consequuntur? Possimus aliquam culpa tempora suscipit vitae?
+        </h3>
+      </div>
+      <div class="movies"></div>
+    </div>
+    <div class="video-container" style="display: none">
+      <div class="c-video">
+        <video class="video" autoplay></video>
+        <button id="back"><i class="fa fa-arrow-left"></i> Back</button>
+        <div class="controls">
+          <div class="c-top">
+            <div class="buttons">
+              <button id="play-pause">Pause</button>
+              <button id="bitrate">Bitrate</button>
+            </div>
+          </div>
+          <div class="c-bottom">
+            <div class="video-bar">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
